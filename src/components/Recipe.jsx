@@ -1,13 +1,14 @@
 import React from "react";
 
-export default Recipe = (props) => {
-    const {name, ingredients, steps} = props
+const Recipe = (props) => {
+    console.log(props[0]);
+    const {name, ingredients, steps} = props[0]
     return (
-        <section>
+        <>
             <h1>{name}</h1>
             <ul>
                 {ingredients.map((ingredient, i) => (
-                    <li key={i}>{ingredient}</li>
+                    <li key={i}>{ingredient.name}</li>
                 ))}
             </ul>
             <section>
@@ -16,6 +17,8 @@ export default Recipe = (props) => {
                     <p key={i}>{step}</p>
                 ))}
             </section>
-        </section>
+        </>
     )
 }
+
+export default Recipe;
