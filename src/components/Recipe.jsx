@@ -1,5 +1,7 @@
 import React from "react";
 
+import StarRating from "./stars.jsx";
+
 const Recipe = ({props}) => {
     console.log(props);
     // const { name, ingredients, steps } = props[0]
@@ -22,6 +24,7 @@ const Recipe = ({props}) => {
                             <p key={i}>{step}</p>
                         ))}
                     </section>
+                    <StarRating />
                 </div>
             ))}
 
