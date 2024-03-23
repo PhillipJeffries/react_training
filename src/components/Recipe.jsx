@@ -3,7 +3,7 @@ import React from "react";
 import StarRating from "./stars.jsx";
 
 const Recipe = ({props}) => {
-    console.log(props);
+    // console.log(props);
     // const { name, ingredients, steps } = props[0]
     return (
         <>
